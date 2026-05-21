@@ -1,0 +1,472 @@
+main {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.hero-section,
+.metrics-section,
+.difference-section,
+.strategy-section,
+.team-section,
+.site-footer {
+  position: relative;
+  min-height: 100vh;
+  padding: 54px clamp(32px, 5.75vw, 78px) clamp(32px, 5vw, 76px);
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.brand {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(32px, 3vw, 42px);
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+
+nav,
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.6vw, 24px);
+}
+
+.nav-pill {
+  width: 170px;
+  box-sizing: border-box;
+  border: 1.5px solid var(--brand-blue);
+  border-radius: 999px;
+  color: #000000;
+  font-family: var(--font-spectral);
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 20px 14px;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.nav-pill:hover,
+.nav-pill:focus-visible {
+  background: var(--brand-blue);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.hero-copy {
+  width: min(930px, 100%);
+  margin: clamp(213px, 28vh, 230px) auto 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(58px, 4.7vw, 64px);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.hero-copy p {
+  max-width: 910px;
+  margin: 14px auto 0;
+  color: #000000;
+  font-size: clamp(23px, 1.76vw, 24px);
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.section-art {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.metrics-section {
+  display: grid;
+  align-content: center;
+  gap: clamp(64px, 8vw, 104px);
+}
+
+.top-gradient {
+  top: 7%;
+  left: -12%;
+  width: min(126vw, 1720px);
+  opacity: 0.86;
+}
+
+.building-overlay {
+  right: -7%;
+  bottom: 0;
+  width: min(86vw, 1160px);
+  opacity: 0.92;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 6vw, 90px);
+  width: min(1060px, 100%);
+  margin: 0 auto;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric strong {
+  display: block;
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(58px, 6vw, 96px);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.metric span {
+  display: block;
+  margin-top: 26px;
+  color: #000000;
+  font-size: clamp(22px, 2.15vw, 32px);
+  font-weight: 300;
+  line-height: 1.16;
+  white-space: pre-line;
+}
+
+.about-text {
+  width: min(880px, 100%);
+  margin: 0 auto;
+  color: #000000;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 300;
+  line-height: 1.34;
+  text-align: center;
+}
+
+.difference-section {
+  display: grid;
+  place-items: center;
+}
+
+.difference-gradient {
+  inset: auto -20% -18% auto;
+  width: min(118vw, 1580px);
+  opacity: 0.95;
+}
+
+.section-copy {
+  width: min(980px, 100%);
+}
+
+.centered {
+  text-align: center;
+}
+
+.section-copy h2 {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(48px, 5.6vw, 88px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.section-copy h3 {
+  width: min(760px, 100%);
+  margin: 34px auto 0;
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(38px, 4.8vw, 72px);
+  font-weight: 400;
+  line-height: 1.03;
+}
+
+.section-copy p {
+  width: min(920px, 100%);
+  margin: 42px auto 0;
+  color: #000000;
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 300;
+  line-height: 1.34;
+}
+
+.strategy-section {
+  display: grid;
+  align-items: center;
+}
+
+.strategy-gradient {
+  inset: -12% auto auto -18%;
+  width: min(116vw, 1540px);
+  opacity: 0.82;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(32px, 4vw, 66px);
+  width: min(1286px, 100%);
+  margin: 0 auto;
+}
+
+.strategy-card {
+  min-height: 490px;
+  border: 1.5px solid var(--brand-blue);
+  border-radius: 38px;
+  padding: clamp(46px, 5vw, 72px) clamp(34px, 4vw, 58px);
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.62);
+  text-align: center;
+}
+
+.strategy-card h2 {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(45px, 4.4vw, 70px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.rule {
+  height: 1.5px;
+  width: 100%;
+  margin: 44px auto 34px;
+  background: var(--brand-blue);
+}
+
+.strategy-card .specialty,
+.team-member p {
+  font-style: italic;
+}
+
+.strategy-card .specialty {
+  margin-bottom: 30px;
+  font-size: clamp(22px, 2vw, 30px);
+}
+
+.strategy-card p {
+  color: #000000;
+  font-size: clamp(21px, 1.9vw, 29px);
+  font-weight: 300;
+  line-height: 1.26;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(520px, 1.1fr);
+  align-items: center;
+  gap: clamp(60px, 8vw, 120px);
+}
+
+.team-gradient {
+  left: -30%;
+  bottom: -28%;
+  width: min(124vw, 1660px);
+  opacity: 0.9;
+}
+
+.team-intro h2 {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(66px, 7vw, 116px);
+  font-weight: 400;
+  line-height: 1.03;
+}
+
+.team-intro p {
+  margin-top: 26px;
+  color: #000000;
+  font-size: clamp(24px, 2.25vw, 34px);
+  font-weight: 300;
+  line-height: 1.32;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(44px, 7vw, 120px);
+  row-gap: clamp(54px, 8vh, 84px);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member h3 {
+  color: var(--brand-blue);
+  font-family: var(--font-spectral);
+  font-size: clamp(25px, 2.2vw, 34px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.team-member p {
+  margin-top: 8px;
+  color: #000000;
+  font-size: clamp(20px, 1.75vw, 28px);
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.site-footer {
+  min-height: 72vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 42px;
+  text-align: center;
+}
+
+.footer-gradient {
+  inset: auto 0 -42% 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.92;
+}
+
+.footer-brand {
+  font-size: clamp(58px, 6vw, 104px);
+}
+
+.footer-links {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--brand-blue);
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1020px) {
+  .hero-section,
+  .metrics-section,
+  .difference-section,
+  .strategy-section,
+  .team-section,
+  .site-footer {
+    min-height: auto;
+    padding: 34px 22px 78px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .nav-pill {
+    min-width: 96px;
+    font-size: 18px;
+    padding: 10px 16px 12px;
+  }
+
+  .hero-copy {
+    margin-top: 112px;
+    padding-bottom: 80px;
+  }
+
+  .metric-grid,
+  .strategy-grid,
+  .team-section,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-section {
+    gap: 58px;
+  }
+
+  .strategy-card {
+    min-height: auto;
+    border-radius: 30px;
+  }
+
+  .team-section {
+    gap: 56px;
+  }
+
+  .team-intro,
+  .team-member {
+    text-align: left;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .nav-pill {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 0;
+  }
+
+  .building-overlay {
+    right: -70%;
+    width: 180vw;
+  }
+
+  .metric-grid {
+    gap: 46px;
+  }
+
+  .footer-links {
+    gap: 16px 24px;
+  }
+}
